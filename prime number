@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class PrimeNumber{
+public static void main(String[] args){
+Scanner in = new Scanner(System.in);
+System.out.println("Enter a number greater than 2 which you want to check whether that number is prime or not: ");
+int p = in.nextInt();
+int i=2;
+for(; i&lt;10; i++){
+if(p%i==0 &amp;&amp; p!=i){
+System.out.println("Entered number "+p+" is not a prime number.");
+break;
+}
+}
+if(i==10){
+System.out.println("Entered number "+p+" is a prime number.");
+}
+}
+}
